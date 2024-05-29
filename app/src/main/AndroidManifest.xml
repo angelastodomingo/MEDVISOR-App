@@ -13,9 +13,44 @@
         android:theme="@style/Theme.MEDVISOR"
         tools:targetApi="31">
         <activity
-            android:name=".Dashboard"
+            android:name=".termsofservicescreen"
             android:exported="false" />
-        <!-- Main activity -->
+        <activity
+            android:name=".privacypolicyscreen"
+            android:exported="false" />
+        <activity
+            android:name=".notificationssssScreen"
+            android:exported="false" />
+        <activity
+            android:name=".onboarding.notifications_screen"
+            android:exported="false" />
+        <activity
+            android:name=".location_screen"
+            android:exported="false" />
+        <activity
+            android:name=".profile_screen"
+            android:exported="false" />
+        <activity
+            android:name=".onboarding.callScreen"
+            android:exported="false" />
+        <activity
+            android:name=".NewAddressScreen"
+            android:exported="false" />
+        <activity
+            android:name=".faqactivity"
+            android:exported="false" />
+        <activity
+            android:name=".ambulanceactivity"
+            android:exported="false" />
+        <activity
+            android:name=".bookanappointmentactivity"
+            android:exported="false" />
+        <activity
+            android:name=".consultadoctor"
+            android:exported="false" />
+        <activity
+            android:name=".Dashboard"
+            android:exported="false" /> <!-- Main activity -->
         <activity
             android:name=".MainActivity"
             android:exported="true">
