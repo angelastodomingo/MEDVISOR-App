@@ -18,45 +18,39 @@ class SettingsFragment : Fragment() {
         binding = FragmentSettingsBinding.inflate(inflater, container, false)
         val view = binding.root
 
-        // Set click listener for profile button
+        // click listener for profile button
         binding.profilebutton.setOnClickListener {
-            // Define the action you want to perform here,
-            // such as redirecting to another screen (Activity or Fragment)
+            // profile
             val intent = Intent(requireContext(), profile_screen::class.java)
             startActivity(intent)
         }
 
         binding.locationbutton.setOnClickListener {
-            // Define the action you want to perform here,
-            // such as redirecting to another screen (Activity or Fragment)
+            // location
             val intent = Intent(requireContext(), location_screen::class.java)
             startActivity(intent)
         }
 
         binding.notificationsbutton.setOnClickListener {
-            // Define the action you want to perform here,
-            // such as redirecting to another screen (Activity or Fragment)
+            // notification
             val intent = Intent(requireContext(), notificationssssScreen::class.java)
             startActivity(intent)
         }
 
         binding.privacypolicybutton.setOnClickListener {
-            // Define the action you want to perform here,
-            // such as redirecting to another screen (Activity or Fragment)
+            // privacypolicy
             val intent = Intent(requireContext(), privacypolicyscreen::class.java)
             startActivity(intent)
         }
 
         binding.termsofservicebutton.setOnClickListener {
-            // Define the action you want to perform here,
-            // such as redirecting to another screen (Activity or Fragment)
+            // terms of service
             val intent = Intent(requireContext(), termsofservicescreen::class.java)
             startActivity(intent)
         }
 
         binding.logoutbutton.setOnClickListener {
-            // Define the action you want to perform here,
-            // such as redirecting to another screen (Activity or Fragment)
+            // log out
             val intent = Intent(requireContext(), LoginFragment::class.java)
             startActivity(intent)
         }

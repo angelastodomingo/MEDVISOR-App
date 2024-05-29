@@ -40,16 +40,15 @@ class AppointmentFragment : Fragment() {
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
-        // Inflate the layout for this fragment
+
         val view = inflater.inflate(R.layout.fragment_appointment, container, false)
 
-        // Initialize the spinners
+
         spinner1 = view.findViewById(R.id.spinner1)
         spinner2 = view.findViewById(R.id.spinner2)
         spinner3 = view.findViewById(R.id.spinner3)
 
-        // Set up adapters
-        // Set up adapters with custom spinner item layout
+
         val hospitalAdapter = ArrayAdapter(requireContext(), R.layout.spinner_item, hospitals)
         hospitalAdapter.setDropDownViewResource(R.layout.spinner_dropdown_item)
         spinner1.adapter = hospitalAdapter
@@ -62,7 +61,7 @@ class AppointmentFragment : Fragment() {
         doctorAdapter.setDropDownViewResource(R.layout.spinner_dropdown_item)
         spinner3.adapter = doctorAdapter
 
-        // Set up item selected listeners for spinner1
+        // spinner1
         spinner1.onItemSelectedListener = object : AdapterView.OnItemSelectedListener {
             override fun onItemSelected(
                 parent: AdapterView<*>?,
@@ -82,7 +81,7 @@ class AppointmentFragment : Fragment() {
             }
         }
 
-        // Set up item selected listeners for spinner2
+        // spinner2
         spinner2.onItemSelectedListener = object : AdapterView.OnItemSelectedListener {
             override fun onItemSelected(
                 parent: AdapterView<*>?,
@@ -102,7 +101,7 @@ class AppointmentFragment : Fragment() {
             }
         }
 
-        // Set up item selected listeners for spinner3
+        // spinner 3
         spinner3.onItemSelectedListener = object : AdapterView.OnItemSelectedListener {
             override fun onItemSelected(
                 parent: AdapterView<*>?,
@@ -128,7 +127,7 @@ class AppointmentFragment : Fragment() {
             Toast.makeText(context, "Booked appointment!", Toast.LENGTH_SHORT).show()
         }
 
-        return view  // This should be the last line in the onCreateView method
+        return view
     }
 
     private fun setupItemSelectedListener(spinner: Spinner, data: Array<String>) {

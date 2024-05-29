@@ -17,7 +17,7 @@ class ambulanceactivity : AppCompatActivity() {
         setContentView(binding.root)
 
         binding.ambulancebutton.setOnClickListener {
-            // Create an Intent to navigate to NewAddressScreen
+
             val intent = Intent(this, NewAddressScreen::class.java)
             startActivity(intent)
         }

@@ -17,7 +17,7 @@ class HomeFragment : Fragment() {
         // Inflate the layout for this fragment
         val view = inflater.inflate(R.layout.fragment_home, container, false)
 
-        // Find ImageView elements and set onClickListeners
+
         val consultDoctorBtn = view.findViewById<ImageView>(R.id.consultdoctorbtn)
         val bookAppointmentBtn = view.findViewById<ImageView>(R.id.bookappointmentbtn)
         val ambulanceBtn = view.findViewById<ImageView>(R.id.ambulancebtn)
